@@ -1,0 +1,74 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    .group {
+      margin-bottom: 0;
+      max-width: 100%;
+
+      input, span {
+        max-width: 100%;
+      }
+    }
+
+    .app-btn.btn {
+      cursor: pointer;
+      background-color: $secondary-color;
+      width: 300px;
+      max-width: 100%;
+      transition: opacity 0.5s;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+.form-view {
+  .form-container, .submitted-info-container, .loading-container  {
+    display: none;
+  }
+
+  &.form {
+    .form-container {
+      display: flex;
+    }
+  }
+
+  &.submitted {
+    .submitted-info-container {
+      min-height: 120px;
+      display: flex;
+      justify-content: center;
+      margin: 50px 0;
+
+      h2 {
+        color: $secondary-color
+      }
+    }
+  }
+
+  &.loading {
+    .loading-container{
+      min-height: 120px;
+      display: flex;
+      justify-content: center;
+      margin: 50px 0;
+    }
+  }
+}
