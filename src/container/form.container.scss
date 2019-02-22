@@ -40,7 +40,7 @@
 }
 
 .form-view {
-  .form-container, .submitted-info {
+  .form-container, .submitted-info, .loading-state  {
     display: none;
   }
 
@@ -59,6 +59,14 @@
       h2 {
         color: $secondary-color
       }
+    }
+  }
+
+  &.loading {
+    .loading-state{
+      display: flex;
+      justify-content: center;
+      margin: 50px 0;
     }
   }
 }

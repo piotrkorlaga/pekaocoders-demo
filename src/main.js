@@ -5,5 +5,9 @@ const sendButtonElement = window.document.getElementById('sendButton');
 
 sendButtonElement.addEventListener('click', function(){
     sendButtonElement.disabled = true;
-    formViewElement.classList = 'form-view submitted';
+    formViewElement.classList = 'form-view loading';
+
+    setTimeout(() => {
+        formViewElement.classList = 'form-view submitted';
+    }, 1000)
 });
