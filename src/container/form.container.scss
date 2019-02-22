@@ -40,7 +40,7 @@
 }
 
 .form-view {
-  .form-container, .submitted-info, .loading-state  {
+  .form-container, .submitted-info-container, .loading-container  {
     display: none;
   }
 
@@ -51,7 +51,8 @@
   }
 
   &.submitted {
-    .submitted-info {
+    .submitted-info-container {
+      min-height: 120px;
       display: flex;
       justify-content: center;
       margin: 50px 0;
@@ -63,7 +64,8 @@
   }
 
   &.loading {
-    .loading-state{
+    .loading-container{
+      min-height: 120px;
       display: flex;
       justify-content: center;
       margin: 50px 0;

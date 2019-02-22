@@ -195,20 +195,22 @@ input:focus ~ .highlight {
       .form-container form .app-btn.btn:hover {
         opacity: 0.6; }
 
-.form-view .form-container, .form-view .submitted-info, .form-view .loading-state {
+.form-view .form-container, .form-view .submitted-info-container, .form-view .loading-container {
   display: none; }
 
 .form-view.form .form-container {
   display: flex; }
 
-.form-view.submitted .submitted-info {
+.form-view.submitted .submitted-info-container {
+  min-height: 120px;
   display: flex;
   justify-content: center;
   margin: 50px 0; }
-  .form-view.submitted .submitted-info h2 {
+  .form-view.submitted .submitted-info-container h2 {
     color: #ff8063; }
 
-.form-view.loading .loading-state {
+.form-view.loading .loading-container {
+  min-height: 120px;
   display: flex;
   justify-content: center;
   margin: 50px 0; }
@@ -251,7 +253,13 @@ body {
 
 .content {
   padding: 0 10px;
-  max-width: 100%; }
+  max-width: 100%;
+  height: calc(100% - 120px);
+  max-height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
 
 h1, h2 {
   color: #4248a0;
@@ -267,6 +275,7 @@ footer {
   width: 100%; }
 
 footer {
+  min-height: 120px;
   text-align: center; }
   footer .app-icon-container {
     padding: 10px 0; }
