@@ -151,6 +151,47 @@ input:focus ~ .highlight {
   padding-top: 120%;
   transition: width .2s ease-out, padding-top .2s ease-out; }
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; }
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; }
+    .form-container form h2 {
+      margin-bottom: 30px; }
+    .form-container form .group {
+      margin-bottom: 0;
+      max-width: 100%; }
+      .form-container form .group input, .form-container form .group span {
+        max-width: 100%; }
+    .form-container form .app-btn.btn {
+      cursor: pointer;
+      background-color: #ff8063;
+      width: 300px;
+      max-width: 100%;
+      transition: opacity 0.5s; }
+      .form-container form .app-btn.btn:hover {
+        opacity: 0.6; }
+
+.form-view .form-container, .form-view .submitted-info {
+  display: none; }
+
+.form-view.form .form-container {
+  display: flex; }
+
+.form-view.submitted .submitted-info {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0; }
+  .form-view.submitted .submitted-info h2 {
+    color: #ff8063; }
+
 .app-icon:before {
   font-family: 'icomoon';
   speak: none;
@@ -203,28 +244,6 @@ img {
 footer {
   background-color: #4248a0;
   width: 100%; }
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%; }
-  form h2 {
-    margin-bottom: 30px; }
-  form .group {
-    margin-bottom: 0;
-    max-width: 100%; }
-    form .group input, form .group span {
-      max-width: 100%; }
-  form .app-btn.btn {
-    cursor: pointer;
-    background-color: #ff8063;
-    width: 300px;
-    max-width: 100%;
-    transition: opacity 0.5s; }
-    form .app-btn.btn:hover {
-      opacity: 0.6; }
 
 footer {
   text-align: center; }

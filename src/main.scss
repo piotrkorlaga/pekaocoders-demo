@@ -1,8 +1,10 @@
 @import 'settings/fonts';
 @import 'settings/variables';
 
-@import "components/input";
-@import "components/button";
+@import "components/input.component";
+@import "components/button.component";
+
+@import "container/form.container";
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext');
 $ft_main: 'Lato', sans-serif;
@@ -60,39 +62,6 @@ img {
 footer {
   background-color: $primary-color;
   width: 100%;
-}
-
-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-
-  h2 {
-    margin-bottom: 30px;
-  }
-
-  .group {
-    margin-bottom: 0;
-    max-width: 100%;
-
-    input, span{
-      max-width: 100%;
-    }
-  }
-
-  .app-btn.btn{
-    cursor: pointer;
-    background-color: $secondary-color;
-    width: 300px;
-    max-width: 100%;
-    transition: opacity 0.5s;
-
-    &:hover{
-      opacity: 0.6;
-    }
-  }
 }
 
 footer {
