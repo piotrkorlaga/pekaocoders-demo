@@ -1,3 +1,25 @@
+@import 'settings/fonts';
+@import 'settings/variables';
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext');
+$ft_main: 'Lato', sans-serif;
+
+.app-icon {
+  @include icon;
+
+  &.app-icon-github {
+    @include github;
+  }
+
+  &.app-icon-facebook {
+    @include facebook;
+  }
+
+  &.app-icon-instagram {
+    @include instagram;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,13 +32,62 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  text-align: center;
+  font-family: $ft_main;
 }
 
 h1, h2 {
-  color: #4248a0;
+  color: $primary-color;
+}
+
+h1 {
+  padding: 5% 0 0 0;
 }
 
 img {
   max-width: 60%;
+}
+
+footer {
+  background-color: $primary-color;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+
+  .app-icon-container {
+    padding: 10px 0;
+
+
+    a {
+      color: $secondary-color;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 40px;
+      text-align: center;
+      padding: 0 10px;
+      transition: opacity .5s;
+      display: inline-block;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  p {
+    padding: 10px 0;
+    color: $white-color;
+  }
+
+  .link {
+    color: $white-color;
+    transition: opacity .5s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
