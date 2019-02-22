@@ -1,0 +1,21 @@
+{
+  "name": "pekaocoders-demo",
+  "version": "1.0.0",
+  "description": "landing page for pekeacoders hackaton demo site",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/applantic/pekaocoders-demo.git"
+  },
+  "keywords": [
+    "pekeacoders",
+    "hackaton",
+    "wemakebuttons"
+  ],
+  "author": "Daniel Karski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/applantic/pekaocoders-demo/issues"
+  },
+  "homepage": "https://github.com/applantic/pekaocoders-demo#readme"
+}
