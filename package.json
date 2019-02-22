@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "landing page for pekeacoders hackaton demo site",
   "main": "main.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/applantic/pekaocoders-demo.git"
@@ -17,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/applantic/pekaocoders-demo/issues"
   },
-  "homepage": "https://github.com/applantic/pekaocoders-demo#readme"
+  "homepage": "https://github.com/applantic/pekaocoders-demo#readme",
+  "devDependencies": {
+    "rollup": "^1.2.2",
+    "rollup-plugin-scss": "^1.0.0"
+  }
 }
