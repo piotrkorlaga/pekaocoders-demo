@@ -1,21 +1,21 @@
 # Do not change version. This is the version of aws buildspec, not the version of your buldspec file.
 version: 0.2
 
-phases:
-  install:
-    commands:
-      - echo Installing...
-      - npm install
-  pre_build:
-    commands:
-      - echo Pre-building...
-  build:
-    commands:
-      - echo Build started on `date`
-      - npm run build
-  post_build:
-    commands:
-      - echo Build completed on `date`
+# phases:
+# install:
+#   commands:
+#     - echo Installing...
+#     - npm install
+# pre_build:
+#   commands:
+#     - echo Pre-building...
+# build:
+#   commands:
+#     - echo Build started on `date`
+#     - npm run build
+# post_build:
+#   commands:
+#     - echo Build completed on `date`
 # Include only the files required for your application to run.
 # Do not use recursively include artifacts from node_modules directory as it will include unnecessary packages
 # used only for building and testing.
@@ -25,3 +25,5 @@ artifacts:
     - docs/*
     - docs/assets/*
     - docs/assets/fonts/*
+    - docs/assets/default_100_percent/*
+    - docs/assets/default_200_percent/*
