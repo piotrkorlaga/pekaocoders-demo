@@ -87,23 +87,22 @@ ul {
   z-index: 0;
 }
 
-/* .offline .controller {
-  background: rgba(247, 247, 247, .1);
-  height: 100vh;
+.offline .controller {
+  background: rgba(247, 247, 247, 0.1);
+  height: 220px;
   left: 0;
   position: absolute;
   top: 0;
   width: 100vw;
   z-index: 1;
-} */
+}
 
 .footer {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
-  bottom: 0;
+  margin-top: 20px;
   left: 0;
   background: #4248a0;
 }
@@ -237,7 +236,7 @@ h2 {
 }
 
 .ranking-container {
-  position: fixed;
+  position: absolute;
   z-index: 999;
   left: 0;
   top: 0;
