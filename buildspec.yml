@@ -5,12 +5,14 @@ phases:
   install:
     commands:
       - echo Installing...
+      - npm install
   pre_build:
     commands:
       - echo Pre-building...
   build:
     commands:
       - echo Build started on `date`
+      - npm run build
   post_build:
     commands:
       - echo Build completed on `date`
@@ -20,4 +22,6 @@ phases:
 # ExpressJS apps will need other artifact directories included (bin/*, public/*, routes/*, views/* etc).
 artifacts:
   files:
-    - docs
+    - docs/*
+    - docs/assets/*
+    - docs/assets/fonts/*
