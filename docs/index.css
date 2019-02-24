@@ -105,13 +105,18 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
   margin-top: 20px;
   left: 0;
   background: #4248a0;
 }
 
+.footer .save-btn {
+  margin: 8px auto;
+}
+
 .logo {
-  width: 100px;
+  width: 50px;
 }
 
 #offline-resources {
@@ -205,6 +210,10 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer .flex-center > * {
+  margin: 0 4px;
 }
 
 .nickinput {
