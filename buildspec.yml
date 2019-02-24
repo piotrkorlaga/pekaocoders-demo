@@ -1,22 +1,22 @@
 # Do not change version. This is the version of aws buildspec, not the version of your buldspec file.
 version: 0.2
 
- phases:
- install:
-   commands:
-     - echo Installing...
- pre_build:
-   commands:
-     - echo Pre-building...
- build:
-   commands:
-     - echo Build started on `date`
- post_build:
-   commands:
-     - echo Build completed on `date`
+# phases:
+# install:
+#   commands:
+#     - echo Installing...
+# pre_build:
+#   commands:
+#     - echo Pre-building...
+# build:
+#   commands:
+#     - echo Build started on `date`
+# post_build:
+#   commands:
+#     - echo Build completed on `date`
 artifacts:
   files:
-    - docs/**
+    - docs/*
     - docs/assets/*
     - docs/assets/fonts/*
     - docs/assets/default_100_percent/*
