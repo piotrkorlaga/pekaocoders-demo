@@ -2758,7 +2758,7 @@ function updateScoreBoard(data) {
 }
 
 function saveScore({ name, score }) {
-    fetch(`${API}/scoreboard`, {
+    fetch(`${API}/scoreboard/very-funny`, {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -2772,6 +2772,6 @@ function saveScore({ name, score }) {
 /* SCOREBOARD CODE */
 const API = "https://wt-429e742b12e26fd3d0a570f0b521551b-0.sandbox.auth0-extend.com/pekaocoders"
 
-fetch(`${API}/scoreboard`)
+fetch(`${API}/scoreboard/very-funny`)
     .then(res => res.json())
     .then(updateScoreBoard);
