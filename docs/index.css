@@ -3,7 +3,7 @@
  * found in the LICENSE file. */
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 }
 
@@ -11,7 +11,8 @@ a {
   color: #f3fdfd;
 }
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -27,7 +28,10 @@ html, body {
 }
 
 .icon-offline {
-  content: -webkit-image-set( url(assets/default_100_percent/100-error-offline.png) 1x, url(assets/default_200_percent/200-error-offline.png) 2x);
+  content: -webkit-image-set(
+    url(assets/default_100_percent/100-error-offline.png) 1x,
+    url(assets/default_200_percent/200-error-offline.png) 2x
+  );
   position: relative;
 }
 
@@ -87,11 +91,11 @@ ul {
 }
 
 .offline .controller {
-  background: rgba(247, 247, 247, .1);
-  height: 220px;
+  background: rgba(247, 247, 247, 0.1);
+  height: 72px;
   left: 0;
   position: absolute;
-  top: 0;
+  top: 145px;
   width: 100vw;
   z-index: 1;
 }
@@ -115,7 +119,8 @@ ul {
 }
 
 @media (max-width: 420px) {
-  .suggested-left>#control-buttons, .suggested-right>#control-buttons {
+  .suggested-left > #control-buttons,
+  .suggested-right > #control-buttons {
     float: none;
   }
   .snackbar {
@@ -141,7 +146,7 @@ ul {
   }
 }
 
-@media (min-width: 420px) and (max-width: 736px) and (min-height: 240px) and (max-height: 420px) and (orientation:landscape) {
+@media (min-width: 420px) and (max-width: 736px) and (min-height: 240px) and (max-height: 420px) and (orientation: landscape) {
   .interstitial-wrapper {
     margin-bottom: 100px;
   }
@@ -182,13 +187,13 @@ h2 {
 .rank-btn {
   margin: 20px auto 0 auto;
   background: none;
-  border: 2px solid #ff8063;;
+  border: 2px solid #ff8063;
   text-transform: uppercase;
   display: block;
   height: 40px;
   font-weight: bold;
   padding: 8px;
-  color:  #ff8063;
+  color: #ff8063;
   font-size: 12px;
 }
 
