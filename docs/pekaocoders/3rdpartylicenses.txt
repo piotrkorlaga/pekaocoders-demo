@@ -1,3 +1,6 @@
+highcharts
+https://www.highcharts.com/license
+
 tslib
 Apache-2.0
 Apache License
@@ -274,6 +277,9 @@ MIT
 
 @angular/router
 MIT
+
+highcharts-angular
+SEE LICENSE IN <LICENSE>
 
 @angular/animations
 MIT
