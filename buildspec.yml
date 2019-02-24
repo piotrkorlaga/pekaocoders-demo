@@ -22,8 +22,4 @@ version: 0.2
 # ExpressJS apps will need other artifact directories included (bin/*, public/*, routes/*, views/* etc).
 artifacts:
   files:
-    - docs/*
-    - docs/assets/*
-    - docs/assets/fonts/*
-    - docs/assets/default_100_percent/*
-    - docs/assets/default_200_percent/*
+    - docs/**
